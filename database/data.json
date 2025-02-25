@@ -1,0 +1,112 @@
+{
+    "utilisateur": {
+        "1": {
+            "nom": "etudiant",
+            "email": "etudiant@gmail.com",
+            "mdp": "123",
+            "role": "etudiant",
+            "solde": 5000
+        },
+        "2": {
+            "nom": "prof",
+            "email": "prof@gmail.com",
+            "mdp": "123",
+            "role": "professeur"
+        }
+    },
+    "paiements": {
+        "1": {
+            "email_etudiant": "etudiant@gmail.com",
+            "montant": 1000
+        },
+        "2": {
+            "email_etudiant": "etudiant@gmail.com",
+            "montant": 1000
+        },
+        "3": {
+            "email_etudiant": "etudiant@gmail.com",
+            "montant": 1000
+        },
+        "4": {
+            "email_etudiant": "etudiant@gmail.com",
+            "montant": 3000
+        }
+    },
+    "cours": {
+        "1": {
+            "title": "math",
+            "description": "Cours de math\u00e9matiques",
+            "prix": 3500,
+            "professeur": "prof@gmail.com",
+            "etudiants_inscrits": [
+                "etudiant@gmail.com"
+            ]
+        },
+        "2": {
+            "title": "francais",
+            "description": "Cours de fran\u00e7ais",
+            "prix": 1500,
+            "professeur": "prof@gmail.com",
+            "etudiants_inscrits": [
+                "etudiant@gmail.com"
+            ]
+        },
+        "3": {
+            "title": "anglais",
+            "description": "Cours d'anglais",
+            "prix": 2000,
+            "professeur": "prof@gmail.com",
+            "etudiants_inscrits": [
+                "etudiant@gmail.com"
+            ]
+        },
+        "4": {
+            "title": "Algorithme",
+            "description": "COurs d'algorithmique",
+            "prix": 5000,
+            "professeur": "prof@gmail.com",
+            "etudiants_inscrits": []
+        },
+        "5": {
+            "title": "Python Pour les Nuls",
+            "description": "Un cours de python pour les nuls",
+            "prix": 3500,
+            "professeur": "prof@gmail.com",
+            "etudiants_inscrits": []
+        }
+    },
+    "quiz": {
+        "1": {
+            "titre_cours": "Python Pour les Nuls",
+            "questions": [
+                {
+                    "question": "Quel est le role des slices?",
+                    "options": {
+                        "A": "joindre des chaine",
+                        "B": "decouper une liste",
+                        "C": "coller deux chats"
+                    },
+                    "reponse": "B"
+                },
+                {
+                    "question": "Comment on importe un module?",
+                    "options": {
+                        "A": "from module import fonction",
+                        "B": "import module from fonction",
+                        "C": "module import fonction"
+                    },
+                    "reponse": "A"
+                },
+                {
+                    "question": "Les fichiers python ont quel extension?",
+                    "options": {
+                        "A": ".pi",
+                        "B": ".p",
+                        "C": ".py"
+                    },
+                    "reponse": "C"
+                }
+            ]
+        }
+    }
+}
