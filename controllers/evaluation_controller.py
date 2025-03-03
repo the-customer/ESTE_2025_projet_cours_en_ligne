@@ -1,6 +1,8 @@
 from models.evaluation import Evaluation
 from tinydb import Query
 from database.db import db
+from controllers.certification_controller import CertificationController as certifCtrl
+
 
 class EvaluationController:
     @staticmethod
@@ -54,6 +56,6 @@ class EvaluationController:
         #
         if pourcentage >= 70:
             print("🎉 Félicitation ! Vous recevez un certificat 📜 pour ce cours.")
-            # CertificatController.generer_certificat(email_etudiant,titre_cours)
+            certifCtrl.generer_certificat(email_etudiant, titre_cours)
         else:
             print("😔 Vous n'avez pas réussi le quiz, réessayez !")

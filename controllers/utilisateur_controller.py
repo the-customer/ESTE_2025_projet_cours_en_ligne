@@ -3,6 +3,7 @@ from models.professeur import Professeur
 from models.admin import Admin
 from models.utilisateur import Utilisateur
 from views.menu_etudiant import MenuEtudiant
+from views.menu_professeur import MenuProfesseur
 
 
 class UtilisateurController:
@@ -43,5 +44,6 @@ class UtilisateurController:
         print(f"Bienvenue {utilisateur['nom'].upper()}")
         if utilisateur['role'] == "etudiant":
             MenuEtudiant.afficher_menu(email)
-
+        elif utilisateur['role'] == "professeur":
+            MenuProfesseur.afficher_menu(email)
         return utilisateur
